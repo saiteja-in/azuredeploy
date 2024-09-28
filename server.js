@@ -1,7 +1,7 @@
 const dotenv = require("dotenv")
 dotenv.config()
 const http = require('http');
-const port = process.env.PORT ;
+const port = process.env.PORT || 3001;
 
 http.createServer(function(request, response) {
   response.writeHead(200, { 'Content-Type': 'text/html' });
